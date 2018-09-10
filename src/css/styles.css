@@ -1,11 +1,8 @@
-.title1{
-    color: red;
-}
-
-.title2{
+/*Проверяю подключаются ли стили*/
+.blueTitle{
     color: blue;
 }
 
-/*img {*/
-    /*max-height: 200;*/
-/*}/*/
+img {
+    max-height: 200px;
+}

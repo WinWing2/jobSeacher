@@ -3,8 +3,8 @@ let path = require('path');
 let conf = {
     entry: './src/index.jsx', // Точка входа
     output: {
-        path: path.resolve(__dirname, './dist'),  // Папка, в которую будет сохранён итоговый файл
-        filename: 'main.js', // Имя итогового файла
+        path: path.resolve(__dirname, './dist'),  // Папка и путь, по которым будет сохранён итоговый файл.
+        filename: 'main.js',
         publicPath: 'dist/'
     },
     devServer: {
@@ -13,19 +13,19 @@ let conf = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/, // .js файлы скармливаем babel-loader'y
+                test: /\.(js|jsx)$/,
                 use: [
                     'babel-loader'
                 ],
                 exclude: '/node-modules/'
             },
             {
-                test: /\.css$/, // .css файлы скармливаю style/css-loader'aм
+                test: /\.css$/,
                 use: [
                     'style-loader',
-                    'css-loader' // extract-text-webpack-plugin не подключаю, ибо он может работать нестабитьно с webpack 4+.
+                    'css-loader'
+                    // extract-text-webpack-plugin не подключаю, ибо он может работать нестабитьно с webpack 4+, в тех задании про него не говорилось.
                 ]
-                // exclude: '/node-modules/'
             }
         ]
     }
