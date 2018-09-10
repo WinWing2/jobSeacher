@@ -3,44 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi there</title>
-    <script src="./src/js/reactjs/react.development-16.4.2.js"></script>
-    <script src="./src/js/reactjs/react-dom.development-16.4.2.js"></script>
 
-    <!-- Don't use this in production: -->
-    <script src="./src/js/reactjs/babel.min.js"></script>
 </head>
 <body>
-<h1 class="title"></h1>
-<div id="content"></div>
 
+<h1 class="title2"> sdgsdgsd</h1>
+<div id="root"><p>Loading...</p></div>
 <script src="dist/main.js"></script>
-<script>
-    var h1 = React.createElement("h1", null, "Hello, it's h1");
 
-    class HelloWorld extends React.Component {
-        render() {
-            return React.createElement("div", this.props, "Hello, my name is " + this.props.name)
-        }
-    }
+<!--<script src="src/jsx/app.jsx" type="text/babel"></script>-->
 
-    ReactDOM.render(
-        React.createElement(
-            "div",
-            null,
-            React.createElement("p", null, "hello, there 4 components in one div"),
-            React.createElement(
-                "div",
-                null,
-                React.createElement(HelloWorld, {id: "first", name: "Alex", pets:"dog"}),
-                React.createElement(HelloWorld, {id: "second", name: "Paul", pets:"two cats"}),
-                React.createElement(HelloWorld, {id: "third", name: "Mark", pets:"none"}),
-                React.createElement(HelloWorld, {id: "fourth", name: "Helga", pets:"rock"})
-            ),
-        ),
-
-        document.getElementById('content')
-    )
-</script>
-<!--<script type="text/babel" src="react.js"></script>-->
 </body>
 </html>
+
+<!--<h1 class="title1"></h1>-->
+<!--<h1 class="title2"></h1>-->
