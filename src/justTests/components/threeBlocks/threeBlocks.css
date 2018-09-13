@@ -1,0 +1,26 @@
+.parent {
+    width: 1024px;
+    margin: 50px auto 0;
+    padding: 40px;
+    background: #24c3c9;
+    text-align: center;
+}
+
+/*box-sizing*/
+.sizes{
+    background: lightsalmon;
+    width: 300px;
+    height: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    display: inline-block;
+    border: 5px solid darkblue;
+    /*box-sizing: content-box;    !* margin + width + padding + border *!*/
+    /*box-sizing: padding-box;    !* margin + width + padding *!*/
+    box-sizing: border-box;     /* margin + width */
+}
+
+/*test{*/
+    /*overflow: hidden; Не позволяет дочерним элеентам выходить за рамки. (схлопывать margin)*/
+    /*padding в родительском => margin в дочернем*/
+/*}*/
